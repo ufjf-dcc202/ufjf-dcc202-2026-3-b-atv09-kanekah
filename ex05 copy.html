@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        header {
+            background-color: aquamarine;
+        }
+        footer {
+            background-color: aliceblue;
+        }
+        section {
+            background-color: bisque;
+        }
+        nav {
+            background-color: blueviolet;
+        }
+        aside {
+            background-color: pink;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            border: 1px solid greenyellow;
+            background-color: aliceblue;
+            padding: 0.1em;
+        }
+        .holy-graill {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: auto 1fr auto;
+        }
+        .holy-graill > header, footer {
+            grid-column: 1 / 4;
+        }
+        .holy-graill > section {
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article class="holy-graill">
+        <header>
+            <h1>EX.05: Holy Graill</h1>
+        </header>
+        <nav>
+            <ul>
+            <li>Primeiro</li>
+            <li>Segundo</li>
+            <li>Terceiro</li>
+            <li>Quarto</li>
+            <li>Quinto</li>
+        </ul>
+        </nav>
+        <section>
+            <h1>Texto</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nemo, ad harum, impedit debitis officia quibusdam sit eveniet, accusamus tempore recusandae. Cumque, eos? Repellendus molestiae, saepe corrupti sapiente natus hic.</p>
+            <p>Numquam repellat dolore placeat incidunt mollitia aliquid, sunt sequi fugiat. Fugiat, quasi. Dolorum voluptatibus ad magni vel commodi explicabo eaque iure deleniti atque ipsum nisi corporis, natus totam cumque iusto?</p>
+            <p>Et fugit harum odio eius labore corrupti consequatur modi culpa sed voluptate mollitia, quasi fugiat placeat, odit cum! Dignissimos a corrupti totam inventore minus ex autem ad ut ducimus laudantium.</p>
+        </section>
+        <aside>
+            <ul>
+            <li>Primeiro</li>
+            <li>Segundo</li>
+            <li>Terceiro</li>
+            <li>Quarto</li>
+            <li>Quinto</li>
+        </ul>
+        </aside>    
+        <footer>
+            &COPY; 2026 - DCC202 - UFJF
+        </footer>
+        </article>
+    </main>
+</body>
+</html>
